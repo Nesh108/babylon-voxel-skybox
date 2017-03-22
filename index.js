@@ -21,14 +21,14 @@ Skybox.prototype.get_skybox = function() {
   return this.skybox;
 };
 
-Skybox.prototype.set_skybox = function(skybox_name, skybox_path = this.skybox_path) {
+Skybox.prototype.set_skybox = function(skybox_name) {
   this.skybox_material = new BABYLON.StandardMaterial("skyBox", this.scene);
   this.skybox_material.backFaceCulling = false;
   this.skybox_material.disableLighting = true;
   this.skybox_material.diffuseColor = new BABYLON.Color3(0, 0, 0);
   this.skybox_material.specularColor = new BABYLON.Color3(0, 0, 0);
 
-  this.skybox_material.reflectionTexture = new BABYLON.CubeTexture(skybox_path + skybox_name, this.scene);
+  this.skybox_material.reflectionTexture = new BABYLON.CubeTexture(this.skybox_path + skybox_name, this.scene);
   this.skybox_material.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
 
   this.skybox.material = this.skybox_material;

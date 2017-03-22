@@ -2,7 +2,7 @@
 {
   "name": "babylon-voxel-skybox",
   "description": "Skybox for Babylon.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/Nesh108/babylon-voxel-skybox",
   "main": "index.js",
   "author": {
