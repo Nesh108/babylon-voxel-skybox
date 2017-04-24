@@ -2,7 +2,7 @@
 {
   "name": "babylon-voxel-skybox",
   "description": "Skybox for Babylon.js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "homepage": "https://github.com/Nesh108/babylon-voxel-skybox",
   "main": "index.js",
   "author": {
@@ -31,13 +31,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "noa-engine": "~0.20.0",
+    "noa-engine": "^0.21.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
-  "peerDependencies": {
-    "noa-engine": "~0.20.0"
-  },
+  "peerDependencies": { },
   "keywords": [
     "babylon",
     "babylon.js",
